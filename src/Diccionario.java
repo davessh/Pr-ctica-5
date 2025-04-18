@@ -19,7 +19,7 @@ public class Diccionario {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error al leer el archivo" + e.getMessage());
+            System.out.println("Error al leer el archivo " + e.getMessage());
         }
     }
 

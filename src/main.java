@@ -1,10 +1,18 @@
 public class main {
     public static void main(String[] args) {
+        probarPalabras();
+        }
 
-        System.out.println("prueba"); //Prueba para ver si funciona el método
-        Diccionario d = new Diccionario();
-        String s= "hola";
-        int a= d.calcularPuntajePalabra(s); //Deberia de calcular el valor de la palabra
-        System.out.println(a);
+        public static void probarPalabras(){
+        Diccionario diccionario = new Diccionario();
+        diccionario.cargarDesdeArchivo("palabras.txt");
+        //diccionario.contienePalabra("david");
+        String palabra = "palabra";
+        if (diccionario.contienePalabra(palabra)) {
+            int puntaje = diccionario.obtenerPuntaje(palabra);
+            System.out.println("Palabra válida" + ": " + puntaje);
+        } else {
+            System.out.println("Palabra no encontrada");
+        }
     }
 }
