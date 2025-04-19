@@ -46,7 +46,7 @@ public class InterfazUsuario {
     }
 
     private void inicializarJugadores() {
-        scanner.nextLine(); // Limpiar buffer
+        scanner.nextLine();
         for (int i = 1; i <= juego.getNumeroDeJugadores(); i++) {
             System.out.print("Nombre del jugador " + i + ": ");
             String nombre = scanner.nextLine();
