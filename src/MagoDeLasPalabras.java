@@ -7,13 +7,18 @@ public class MagoDeLasPalabras {
     private HashSet<String> palabrasUsadas;
     private int numeroDeJugadores;
     private int dificultad;
+    private int rondaActual;
+    private static final int TOTAL_RONDAS = 3;
     private Diccionario diccionario;
     private List<Character> letrasGeneradas;
+    private ArrayList<String> nombresJugadores;
 
     public MagoDeLasPalabras() {
         this.puntuaciones = new HashMap<>();
         this.palabrasUsadas = new HashSet<>();
         this.diccionario = new Diccionario();
+        this.rondaActual = 1;
+        this.nombresJugadores = new ArrayList<>();
         diccionario.cargarDesdeArchivo("palabras.txt");
     }
 
@@ -46,9 +51,21 @@ public class MagoDeLasPalabras {
         return letrasGeneradas;
     }
 
-    // Métodos de lógica del juego
+    public int getRondaActual() {
+        return rondaActual;
+    }
+
+    public ArrayList<String> getNombresJugadores() {
+        return nombresJugadores;
+    }
+
+    public boolean juegoTerminado() {
+        return rondaActual > TOTAL_RONDAS;
+    }
+
     public void inicializarJugador(String nombre) {
         puntuaciones.put(nombre, 0);
+        nombresJugadores.add(nombre);
     }
 
     public void generarLetras() {
@@ -67,17 +84,39 @@ public class MagoDeLasPalabras {
         return diccionario.obtenerPuntaje(palabra);
     }
 
-    public void registrarPalabra(String jugador, String palabra) {
+    public boolean registrarPalabra(String jugador, String palabra) {
         if (!esPalabraUsada(palabra) && esPalabraValida(palabra)) {
             int puntos = obtenerPuntajePalabra(palabra);
             int totalActual = puntuaciones.get(jugador);
             puntuaciones.put(jugador, totalActual + puntos);
             palabrasUsadas.add(palabra);
+            return true;
         }
+        return false;
     }
 
     public void restarPuntos(String jugador, int puntos) {
         int totalActual = puntuaciones.get(jugador);
-        puntuaciones.put(jugador, totalActual - puntos);
+        puntuaciones.put(jugador, Math.max(0, totalActual - puntos));
+    }
+
+    public void iniciarNuevaRonda() {
+        rondaActual++;
+        palabrasUsadas.clear();
+        generarLetras();
+    }
+
+    public String determinarGanador() {
+        String ganador = "";
+        int maxPuntos = -1;
+
+        for (Map.Entry<String, Integer> entrada : puntuaciones.entrySet()) {
+            if (entrada.getValue() > maxPuntos) {
+                maxPuntos = entrada.getValue();
+                ganador = entrada.getKey();
+            }
+        }
+
+        return ganador;
     }
 }
