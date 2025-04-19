@@ -36,7 +36,7 @@ public class InterfazUsuario {
 
         System.out.println("Modos de juego disponibles: ");
         System.out.println("1) Normal");
-        System.out.println("2) Experto");
+        System.out.println("2) Experto"); //falta
         System.out.print("Seleccione la dificultad:");
         int dificultad;
         do {
