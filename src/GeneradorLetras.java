@@ -1,24 +1,32 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class GeneradorLetras {
+    //static y final debido a que no se modificara el contenido de estos arreglos
+    private static final List<Character> LETRAS_NORMALES = Arrays.asList(
+            'A', 'E', 'I', 'O', 'U', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L',
+            'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'
+    );
 
-    private static final char[] LETRAS = {
-            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-            'U', 'V', 'W', 'X', 'Y', 'Z'
-    };
+    private static final List<Character> LETRAS_EXPERTAS = Arrays.asList(
+            'Á','A', 'É','E', 'Í','I', 'Ó','O', 'Ú','U', 'Ñ','N', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K',
+            'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'
+    );
 
-    public static List<Character> generarLetras(int cantidad) {
-        List<Character> letrasGeneradas = new ArrayList<>();
+    public static List<Character> generarLetras(int cantidad, int experto) {
         Random random = new Random();
+        List<Character> letrasGeneradas = new ArrayList<>();
+        List<Character> fuente = new ArrayList<>();
+        if (experto == 1){
+            fuente = LETRAS_NORMALES;
+        }
+        else if (experto == 2){
+            fuente = LETRAS_EXPERTAS;
+        }
 
         for (int i = 0; i < cantidad; i++) {
-            char letra = LETRAS[random.nextInt(LETRAS.length)];
-            letrasGeneradas.add(letra);
-
+            letrasGeneradas.add(fuente.get(random.nextInt(fuente.size())));
         }
+
         return letrasGeneradas;
     }
 }
