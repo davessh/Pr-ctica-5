@@ -68,8 +68,8 @@ public class MagoDeLasPalabras {
         nombresJugadores.add(nombre);
     }
 
-    public void generarLetras() {
-        this.letrasGeneradas = GeneradorLetras.generarLetras(10);
+    public void generarLetras(int dificultad) {
+        this.letrasGeneradas = GeneradorLetras.generarLetras(10, dificultad);
     }
 
     public boolean esPalabraUsada(String palabra) {
@@ -103,7 +103,7 @@ public class MagoDeLasPalabras {
     public void iniciarNuevaRonda() {
         rondaActual++;
         palabrasUsadas.clear();
-        generarLetras();
+        generarLetras(dificultad);
     }
 
     public String determinarGanador() {

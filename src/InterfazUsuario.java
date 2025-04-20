@@ -56,7 +56,7 @@ public class InterfazUsuario {
 
     private void iniciarRonda() {
         System.out.println("\nRONDA " + juego.getRondaActual());
-        juego.generarLetras();
+        juego.generarLetras(juego.getDificultad());
         mostrarPalabrasGeneradas();
 
         boolean rondaTerminada = false;
