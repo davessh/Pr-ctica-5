@@ -1,25 +1,29 @@
 import java.util.*;
 
+// Clase que representa la interfaz de usuario en consola para el juego MagoDeLasPalabras
 public class InterfazUsuario {
     private Scanner scanner;
     private MagoDeLasPalabras juego;
 
+    // Constructor que inicializa el scanner y la lógica del juego
     public InterfazUsuario() {
         this.scanner = new Scanner(System.in);
         this.juego = new MagoDeLasPalabras();
     }
 
+    // Método principal para iniciar el juego
     public void iniciar() {
-        mostrarMenu();
-        inicializarJugadores();
+        mostrarMenu();              // Configura jugadores y dificultad
+        inicializarJugadores();     // Solicita nombres
         while (!juego.juegoTerminado()) {
-            iniciarRonda();
+            iniciarRonda();         // Inicia cada ronda
             if (juego.juegoTerminado()) {
-                mostrarResultadosFinales();
+                mostrarResultadosFinales(); // Muestra resultados si ya terminó
             }
         }
     }
 
+    // Solicita número de jugadores y dificultad
     private void mostrarMenu() {
         System.out.println("\n◈ MAGO DE LAS PALABRAS ◈");
 
@@ -32,7 +36,7 @@ public class InterfazUsuario {
 
         System.out.println("Modos de juego disponibles: ");
         System.out.println("1) Normal");
-        System.out.println("2) Experto"); //falta
+        System.out.println("2) Experto");
         System.out.print("Seleccione la dificultad:");
         int dificultad;
         do {
@@ -41,8 +45,9 @@ public class InterfazUsuario {
         juego.setDificultad(dificultad);
     }
 
+    // Pide los nombres de los jugadores y los registra
     private void inicializarJugadores() {
-        scanner.nextLine();
+        scanner.nextLine(); // Limpia buffer
         for (int i = 1; i <= juego.getNumeroDeJugadores(); i++) {
             System.out.print("Nombre del jugador " + i + ": ");
             String nombre = scanner.nextLine();
@@ -50,9 +55,10 @@ public class InterfazUsuario {
         }
     }
 
+    // Controla el flujo de una ronda completa
     private void iniciarRonda() {
         System.out.println("\nRONDA " + juego.getRondaActual());
-        juego.generarLetras(juego.getDificultad());
+        juego.generarLetras(juego.getDificultad()); // Genera nuevas letras
         mostrarPalabrasGeneradas();
 
         boolean rondaTerminada = false;
@@ -61,6 +67,7 @@ public class InterfazUsuario {
         while (!rondaTerminada) {
             for (String jugador : juego.getNombresJugadores()) {
                 if (jugadoresPasaron.contains(jugador)) continue;
+
                 boolean turnoTerminado = false;
                 while (!turnoTerminado) {
                     System.out.println("Turno de " + jugador);
@@ -88,6 +95,7 @@ public class InterfazUsuario {
                             break;
                     }
                 }
+
                 if (jugadoresPasaron.size() == juego.getNumeroDeJugadores()) {
                     rondaTerminada = true;
                     break;
@@ -95,11 +103,11 @@ public class InterfazUsuario {
             }
         }
 
-        mostrarResultadosRonda();
-
-        juego.iniciarNuevaRonda();
+        mostrarResultadosRonda();   // Muestra el puntaje actual
+        juego.iniciarNuevaRonda();  // Avanza a la siguiente ronda
     }
 
+    // Procesa y valida una palabra ingresada por el jugador
     private void procesarPalabra(String jugador) {
         System.out.print(jugador + ", ingresa una palabra: ");
         String palabra = scanner.nextLine().toLowerCase();
@@ -107,14 +115,13 @@ public class InterfazUsuario {
         if (juego.esPalabraUsada(palabra)) {
             mostrarPalabrasUsadas();
             System.out.println("Esa palabra ya fue usada, no se otorgan puntos.");
-
             return;
         }
 
         if (!verificarLetrasDisponibles(palabra)) {
             System.out.println("No puedes formar esa palabra con las letras disponibles.");
-                System.out.println("Se restan 5 puntos por palabra inválida.");
-                juego.restarPuntos(jugador, 5);
+            System.out.println("Se restan 5 puntos por palabra inválida.");
+            juego.restarPuntos(jugador, 5);
             return;
         }
 
@@ -133,6 +140,7 @@ public class InterfazUsuario {
         mostrarPalabrasUsadas();
     }
 
+    // Verifica si la palabra ingresada puede formarse con las letras generadas
     private boolean verificarLetrasDisponibles(String palabra) {
         Map<Character, Integer> contadorLetras = new HashMap<>();
 
@@ -143,17 +151,16 @@ public class InterfazUsuario {
 
         for (char c : palabra.toCharArray()) {
             int disponibles = contadorLetras.getOrDefault(c, 0);
-            if (disponibles <= 0) {
-                return false;
-            }
+            if (disponibles <= 0) return false;
             contadorLetras.put(c, disponibles - 1);
         }
 
         return true;
     }
+
+    // Muestra las letras generadas para la ronda actual
     private void mostrarPalabrasGeneradas() {
         List<Character> letras = juego.getLetrasGeneradas();
-
         System.out.print("Letras generadas: ");
         for (char letra : letras) {
             System.out.print(letra + " ");
@@ -161,21 +168,22 @@ public class InterfazUsuario {
         System.out.println("\n");
     }
 
+    // Muestra todas las palabras que ya se han usado
     private void mostrarPalabrasUsadas() {
         System.out.println("Palabras usadas: ");
-        juego.getPalabrasUsadas().stream()
-                .forEach(System.out::println);
+        juego.getPalabrasUsadas().stream().forEach(System.out::println);
     }
+
+    // Muestra los puntajes al finalizar la ronda
     private void mostrarResultadosRonda() {
-        System.out.println("\n Resultados de la ronda " + juego.getRondaActual());
+        System.out.println("\nResultados de la ronda " + juego.getRondaActual());
         juego.getPuntuaciones().forEach((jugador, puntos) ->
                 System.out.println(jugador + ": " + puntos + " puntos"));
     }
 
+    // Muestra el resultado final del juego, incluyendo el ganador
     private void mostrarResultadosFinales() {
-        System.out.println("\nResultados finales: ");
-
-        // Usando lambda para mostrar las puntuaciones
+        System.out.println("\nResultados finales:");
         juego.getPuntuaciones().forEach((jugador, puntos) ->
                 System.out.println(jugador + ": " + puntos + " puntos"));
 

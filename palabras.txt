@@ -1,7 +1,6 @@
 de
 que
 no
-a
 la
 el
 y
@@ -58,7 +57,6 @@ nada
 nos
 este
 cómo
-o
 he
 ser
 puedo
@@ -433,7 +431,6 @@ trabajar
 ok
 deberías
 juego
-e
 algunas
 cree
 entrar
@@ -713,7 +710,6 @@ pensaba
 voz
 novia
 futuro
-s
 propia
 siente
 haz
@@ -777,7 +773,6 @@ recuerda
 abogado
 pagar
 propio
-i
 compañía
 personal
 terminado
@@ -822,7 +817,6 @@ completamente
 mesa
 hambre
 david
-io
 tonto
 gustan
 entendido
@@ -1384,7 +1378,6 @@ recordar
 tomado
 pantalones
 salga
-um
 batalla
 señores
 majestad
@@ -1485,7 +1478,6 @@ asuntos
 pequeños
 caer
 copa
-t
 preocupado
 taxi
 camión
@@ -1650,7 +1642,6 @@ tiro
 parque
 perdone
 puse
-to
 historias
 extraña
 evidencia
@@ -1726,7 +1717,6 @@ cuidar
 enamorado
 francia
 envió
-m
 dedos
 tenéis
 abierto
@@ -1772,7 +1762,6 @@ casos
 debió
 contento
 paga
-d
 oscuro
 llegué
 dará
@@ -1812,7 +1801,6 @@ sombrero
 podré
 marca
 natural
-sr
 siga
 intención
 sexual
@@ -1941,7 +1929,6 @@ perdiendo
 gustó
 sabido
 ocurrido
-it
 interés
 fué
 wow
@@ -2028,10 +2015,8 @@ tamaño
 entero
 guapa
 descubrir
-in
 roma
 fútbol
-l
 durmiendo
 intenté
 mataron
@@ -2119,7 +2104,6 @@ doctora
 negros
 chocolate
 relájate
-of
 detener
 recoger
 llevamos
@@ -2268,7 +2252,6 @@ seguimos
 dirá
 robó
 felicitaciones
-n
 cambió
 responder
 conseguí
@@ -2304,7 +2287,6 @@ imaginar
 bolso
 familias
 piloto
-u
 despues
 acabamos
 carter
@@ -2346,7 +2328,6 @@ chicago
 busco
 dejamos
 aparece
-ed
 cerrada
 amistad
 bravo
@@ -2494,11 +2475,9 @@ desgracia
 vaso
 milagro
 dejaron
-b
 susan
 obvio
 disculpen
-ud
 millas
 encantador
 pasamos
@@ -2712,7 +2691,6 @@ apuesta
 seguido
 aprendido
 arresto
-c
 estarías
 juega
 imágenes
@@ -3081,7 +3059,6 @@ damos
 piano
 cristal
 extranjero
-my
 patrón
 meta
 gritando
@@ -3093,7 +3070,6 @@ aprecio
 detenido
 nadar
 hierba
-jo
 operaciones
 johnson
 sucedido
@@ -3153,7 +3129,6 @@ moto
 pudieras
 deuda
 digan
-on
 flor
 roy
 ruedas
@@ -3823,9 +3798,7 @@ peligrosa
 empleado
 florida
 serías
-is
 hacían
-x
 inocentes
 existencia
 profesora
@@ -3943,7 +3916,6 @@ michelle
 brandon
 maletas
 plantas
-ó
 devolver
 alcanzar
 armada
@@ -4060,7 +4032,6 @@ tanque
 cumplido
 voces
 encargaré
-as
 ponerlo
 países
 figura
@@ -4076,7 +4047,6 @@ vendiendo
 seguiré
 cubrir
 francamente
-mm
 porquería
 imaginé
 notado
@@ -4113,7 +4083,6 @@ piénsalo
 falla
 peleando
 fea
-ho
 míralo
 físico
 costado
@@ -4288,7 +4257,6 @@ confundido
 miré
 reyes
 advertencia
-h
 formar
 técnica
 monedas
@@ -4424,7 +4392,6 @@ hechizo
 origen
 lleguemos
 petróleo
-go
 refuerzos
 suba
 importan
@@ -4518,11 +4485,9 @@ centavo
 capa
 votar
 estadounidense
-so
 hacernos
 congreso
 rango
-v
 graduación
 neil
 cuyo
@@ -4570,7 +4535,6 @@ largas
 creó
 atender
 baby
-be
 mason
 aumento
 dejaremos
@@ -4620,7 +4584,6 @@ juzgado
 rifle
 invito
 espíritus
-em
 medidas
 janet
 páginas
@@ -4865,7 +4828,6 @@ warren
 grita
 barney
 diego
-ll
 macho
 use
 canadá
@@ -5077,7 +5039,6 @@ medicamentos
 quedarás
 padrino
 motores
-bo
 verdaderos
 leslie
 mostró
@@ -5211,7 +5172,6 @@ grosero
 pondremos
 leal
 llevarse
-r
 dana
 admito
 fans
@@ -5221,7 +5181,6 @@ boleto
 espiritual
 actividades
 maletín
-na
 merecía
 perfume
 desorden
@@ -5322,7 +5281,6 @@ cometí
 grabar
 líderes
 cintas
-uu
 lobos
 jueces
 lleves
@@ -5512,7 +5470,6 @@ comenzamos
 principales
 falsos
 sufre
-ie
 acércate
 chip
 duke
@@ -5714,7 +5671,6 @@ escudo
 aca
 danza
 donald
-p
 despierte
 saldré
 direcciones
@@ -5817,7 +5773,6 @@ sierra
 interrogatorio
 clan
 jan
-g
 bingo
 signo
 visual
@@ -5903,7 +5858,6 @@ democracia
 aceptarlo
 preocupen
 puñado
-up
 guy
 métodos
 disposición
@@ -5997,7 +5951,6 @@ aéreo
 carbón
 meg
 duermes
-j
 baños
 localizar
 entraron
@@ -6189,7 +6142,6 @@ mencionado
 llenas
 déjanos
 terminemos
-ii
 retrasado
 kit
 castle
@@ -6512,7 +6464,6 @@ mantenido
 transferencia
 tucker
 pensaron
-qu
 entere
 cobra
 esperaremos
@@ -6640,7 +6591,6 @@ posee
 salvación
 envíe
 rubio
-li
 hanna
 evidentemente
 asustó
@@ -6806,7 +6756,6 @@ sonaba
 llamaremos
 mantenimiento
 sospechas
-mr
 declarar
 alcanza
 interesan
@@ -6943,7 +6892,6 @@ sentirás
 revelar
 woo
 bretaña
-er
 vivas
 llegarán
 rudy
@@ -7156,7 +7104,6 @@ activa
 unir
 tiré
 operar
-by
 glenn
 ballet
 tiburones
@@ -7195,7 +7142,6 @@ venas
 pobreza
 pausa
 bésame
-q
 tinta
 felix
 orquesta
@@ -7374,7 +7320,6 @@ mutuamente
 mejora
 concierne
 asesinaron
-k
 marea
 senos
 remoto
@@ -7433,7 +7378,6 @@ persigue
 ignorar
 racista
 círculos
-f
 foster
 desesperación
 bond
@@ -7526,7 +7470,6 @@ picante
 frutas
 flotando
 cargando
-fu
 llevarán
 suene
 mátalo
@@ -7606,7 +7549,6 @@ espeluznante
 venían
 estándar
 técnicas
-mo
 perseguir
 protegerme
 provocar
@@ -7778,7 +7720,6 @@ alá
 celebrando
 baúl
 llegaría
-an
 presos
 campesinos
 contárselo
@@ -8208,7 +8149,6 @@ ilusiones
 frio
 bandidos
 bóveda
-at
 llevarlos
 localización
 cheryl
@@ -8286,7 +8226,6 @@ unirte
 brisa
 ganará
 pensaban
-ra
 costumbres
 religioso
 sucias
@@ -8358,7 +8297,6 @@ explicaciones
 rechazo
 pólvora
 experimentar
-if
 cruza
 llámalo
 abandonada
@@ -8510,7 +8448,6 @@ limusina
 éxtasis
 dolió
 alrededores
-z
 joshua
 forenses
 escogido
@@ -8680,7 +8617,6 @@ enfades
 sentó
 iros
 bolos
-ji
 peleamos
 conteste
 abras
@@ -8714,7 +8650,6 @@ párate
 declaró
 monitor
 acercarme
-or
 sherlock
 ciegas
 exagerando
@@ -8811,7 +8746,6 @@ interferir
 sacrificios
 juvenil
 félix
-ow
 lori
 hazle
 género
@@ -8982,7 +8916,6 @@ evacuación
 sacrificar
 concejal
 dramático
-us
 superarlo
 gerald
 chao
@@ -9074,7 +9007,6 @@ brooks
 unió
 recomendación
 natal
-je
 amé
 tae
 cristina
@@ -9241,7 +9173,6 @@ cambies
 françois
 tenerlos
 suero
-wu
 evita
 dedicas
 continuará
@@ -9448,7 +9379,6 @@ rezo
 tribus
 libremente
 desafortunado
-yu
 reno
 sushi
 escapando
@@ -9759,7 +9689,6 @@ suceden
 variedad
 narcóticos
 coñac
-du
 importó
 isabelle
 sloan
@@ -9903,7 +9832,6 @@ phillips
 subterráneo
 injusticia
 tendréis
-au
 capas
 quiza
 dejarías
@@ -10115,7 +10043,6 @@ adjunto
 hagáis
 simpatía
 apocalipsis
-et
 ventilación
 molino
 terminada
@@ -10139,7 +10066,7 @@ fitz
 desperdiciar
 acogida
 cesta
-aw
+nopal
 internado
 burdel
 pillar
@@ -10938,7 +10865,6 @@ conocerme
 rivales
 tostadas
 aficionados
-w
 determinación
 aplica
 percepción
@@ -15616,7 +15542,6 @@ campeona
 sonrió
 nacidos
 envuelta
-ki
 hazla
 bombarderos
 fundido
@@ -15770,7 +15695,6 @@ racismo
 eliza
 intérprete
 exactas
-ko
 necesitó
 mucama
 causada
@@ -15931,7 +15855,6 @@ preocupante
 egoístas
 joderme
 tráigame
-gi
 gaseosa
 alejó
 bank
@@ -15961,7 +15884,6 @@ prometimos
 herpes
 aigoo
 exito
-fa
 asno
 venenosa
 opone
@@ -16706,7 +16628,6 @@ fastidiado
 bateador
 tripp
 biografía
-ne
 clientela
 concursantes
 ambiental
@@ -16755,7 +16676,6 @@ buckley
 cogerte
 distracciones
 despedidos
-hs
 myers
 vendería
 coquetear
@@ -17418,7 +17338,6 @@ oirá
 actúes
 gun
 cobardía
-í
 levántalo
 invitan
 tortas
@@ -17491,8 +17410,6 @@ detuviste
 anarquía
 preguntábamos
 fragancia
-ju
-jt
 contacta
 toto
 sensata
@@ -17556,10 +17473,8 @@ capitulo
 recien
 visten
 arreglada
-lsd
 fidel
 pera
-ka
 elenco
 opongo
 enzo
@@ -17845,7 +17760,6 @@ puntaje
 clasificada
 recuperé
 violentas
-mã
 vínculos
 cazado
 ceo
@@ -18020,9 +17934,7 @@ cachorrito
 genocidio
 acostamos
 superioridad
-ehm
 chinas
-ga
 tropecé
 caracol
 aterrada
@@ -19024,13 +18936,11 @@ milagroso
 giran
 extraoficialmente
 paladar
-rj
 comunica
 giros
 acostumbro
 largaos
 polvos
-wo
 morgana
 insistiendo
 alergias
@@ -19049,7 +18959,6 @@ avergonzarme
 quark
 pesaba
 violentamente
-xi
 adelantar
 bombardero
 mostraremos
@@ -19057,7 +18966,6 @@ arreglarte
 soportado
 asesiné
 soportas
-bev
 mándame
 manifestaciones
 mafiosos
@@ -19091,7 +18999,6 @@ cancelarlo
 predijo
 educados
 ubicar
-mad
 servirán
 comprara
 revolucionarios
@@ -19315,7 +19222,6 @@ oregón
 hathaway
 problemita
 bañarme
-neelix
 quererme
 alcantarillas
 valora
@@ -19364,12 +19270,9 @@ moralmente
 estudiaste
 beatriz
 nuño
-hyuk
 glamour
 subdirector
-é
 utilizo
-driscoll
 huyas
 lan
 enseñamos
@@ -25722,7 +25625,7 @@ marcan
 neurológico
 raphael
 autoriza
-papà
+papá
 supere
 marwan
 dominical
@@ -27551,7 +27454,6 @@ argentino
 gruñendo
 arreglaría
 mausoleo
-á
 esperame
 estacas
 negaré
@@ -46428,7 +46330,6 @@ tes
 keri
 estomacales
 genuinos
-ú
 pónganla
 figurar
 endurecido
@@ -49989,11 +49890,8 @@ grandotes
 setos
 juntaremos
 asombró
-deano
 violaría
-aoi
 tita
 maniática
-ist
 oirla
 atraparía
