@@ -1,8 +1,4 @@
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
+import java.util.*;
 
 public class InterfazUsuario {
     private Scanner scanner;
@@ -65,10 +61,9 @@ public class InterfazUsuario {
         while (!rondaTerminada) {
             for (String jugador : juego.getNombresJugadores()) {
                 if (jugadoresPasaron.contains(jugador)) continue;
-
                 boolean turnoTerminado = false;
                 while (!turnoTerminado) {
-                    System.out.println("\nTurno de " + jugador);
+                    System.out.println("Turno de " + jugador);
                     System.out.println("1) Escribir palabra");
                     System.out.println("2) Pasar turno");
                     System.out.print("Selecciona tu jugada:");
@@ -110,7 +105,9 @@ public class InterfazUsuario {
         String palabra = scanner.nextLine().toLowerCase();
 
         if (juego.esPalabraUsada(palabra)) {
-            System.out.println("Esa palabra ya fue usada. No se otorgan puntos.");
+            mostrarPalabrasUsadas();
+            System.out.println("Esa palabra ya fue usada, no se otorgan puntos.");
+
             return;
         }
 
@@ -133,6 +130,7 @@ public class InterfazUsuario {
         int puntos = juego.obtenerPuntajePalabra(palabra);
         System.out.println("Palabra válida. Puntos obtenidos: " + puntos);
         juego.registrarPalabra(jugador, palabra);
+        mostrarPalabrasUsadas();
     }
 
     private boolean verificarLetrasDisponibles(String palabra) {
@@ -163,22 +161,37 @@ public class InterfazUsuario {
         System.out.println("\n");
     }
 
+    private void mostrarPalabrasUsadas() {
+        System.out.println("Palabras usadas: ");
+        juego.getPalabrasUsadas().stream()
+                .forEach(System.out::println);
+    }
     private void mostrarResultadosRonda() {
         System.out.println("\n Resultados de la ronda " + juego.getRondaActual());
-        for (String jugador : juego.getPuntuaciones().keySet()) {
-            System.out.println(jugador + ": " + juego.getPuntuaciones().get(jugador) + " puntos");
-        }
+        juego.getPuntuaciones().forEach((jugador, puntos) ->
+                System.out.println(jugador + ": " + puntos + " puntos"));
     }
 
     private void mostrarResultadosFinales() {
         System.out.println("\nResultados finales: ");
-        for (String jugador : juego.getPuntuaciones().keySet()) {
-            System.out.println(jugador + ": " + juego.getPuntuaciones().get(jugador) + " puntos");
+
+        // Usando lambda para mostrar las puntuaciones
+        juego.getPuntuaciones().forEach((jugador, puntos) ->
+                System.out.println(jugador + ": " + puntos + " puntos"));
+
+        String resultado = juego.determinarGanador();
+
+        if (resultado.equals("EMPATE")) {
+            int maxPuntuacion = juego.getPuntuaciones().values().stream()
+                    .mapToInt(Integer::intValue)
+                    .max()
+                    .orElse(0);
+            System.out.println("\nHubo un empate con " + maxPuntuacion + " puntos");
+        } else if (resultado.equals("No hay jugadores") || resultado.equals("No hay ganador")) {
+            System.out.println("\n" + resultado);
+        } else {
+            int puntosGanador = juego.getPuntuaciones().get(resultado);
+            System.out.println("\nGanador es " + resultado + " con " + puntosGanador + " en puntaje acumulado");
         }
-
-        String ganador = juego.determinarGanador();
-        int puntosGanador = juego.getPuntuaciones().get(ganador);
-
-        System.out.println("\n¡El ganador es " + ganador + " con " + puntosGanador + " puntos!");
     }
 }

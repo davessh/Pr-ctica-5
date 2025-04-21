@@ -2,6 +2,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.*;
+import java.util.stream.Collectors;
+
 public class MagoDeLasPalabras {
     private HashMap<String, Integer> puntuaciones;
     private HashSet<String> palabrasUsadas;
@@ -107,16 +109,27 @@ public class MagoDeLasPalabras {
     }
 
     public String determinarGanador() {
-        String ganador = "";
-        int maxPuntos = -1;
-
-        for (Map.Entry<String, Integer> entrada : puntuaciones.entrySet()) {
-            if (entrada.getValue() > maxPuntos) {
-                maxPuntos = entrada.getValue();
-                ganador = entrada.getKey();
-            }
+        if (puntuaciones.isEmpty()) {
+            return "No hay jugadores";
         }
 
-        return ganador;
+        int maxPuntuacion = puntuaciones.values().stream()
+                .mapToInt(Integer::intValue)
+                .max()
+                .orElse(0);
+
+        long cantidadGanadores = puntuaciones.values().stream()
+                .filter(puntos -> puntos == maxPuntuacion)
+                .count();
+
+        if (cantidadGanadores > 1) {
+            return "EMPATE";
+        } else {
+            return puntuaciones.entrySet().stream()
+                    .filter(entry -> entry.getValue() == maxPuntuacion)
+                    .map(Map.Entry::getKey)
+                    .findFirst()
+                    .orElse("No hay ganador");
+        }
     }
 }
