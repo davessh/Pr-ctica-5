@@ -15,9 +15,20 @@ public class GeneradorLetras {
             'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'
     );
 
+
+    private static final List<Character> VOCALES = Arrays.asList(
+            'A','E','I','O','U'
+            );
     /**
      * Genera una lista de letras aleatorias a partir del modo de juego seleccionado.
      */
+
+//    public static List<Character> generarVocal(){
+//        Random rand = new Random();
+//        List<Character> vocalGenerada = new ArrayList<>(VOCALES);
+//        List<Character> vocal = new ArrayList<>();
+//
+//    }
     public static List<Character> generarLetras(int cantidad, int experto) {
         Random random = new Random(); // Se utiliza para seleccionar letras aleatorias
         List<Character> letrasGeneradas = new ArrayList<>();
@@ -29,11 +40,13 @@ public class GeneradorLetras {
         } else if (experto == 2){
             fuente = LETRAS_EXPERTAS;
         }
+        List<Character> vocal = new ArrayList<>(VOCALES);
 
         // Se generan las letras aleatorias a partir de la fuente seleccionada
-        for (int i = 0; i < cantidad; i++) {
+        for (int i = 0; i < cantidad-1; i++) {
             letrasGeneradas.add(fuente.get(random.nextInt(fuente.size())));
         }
+        letrasGeneradas.add(vocal.get(random.nextInt(vocal.size())));
 
         return letrasGeneradas;
     }

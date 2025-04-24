@@ -41,7 +41,7 @@ public class Diccionario {
      */
     public int calcularPuntajePalabra(String palabra){
         int puntos = 0;
-        String vocales = "aeiouAEIOU";
+        String vocales = "aeiouAEIOUáéíóúÁÉÍÓÚ";
         return palabra.chars()
                 .filter(Character::isLetter) // Solo se consideran letras
                 .map(c -> vocales.indexOf(c) != -1 ? 5 : 3) // Se asigna puntaje según sea vocal o no
